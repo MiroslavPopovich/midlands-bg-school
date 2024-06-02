@@ -1,8 +1,8 @@
 const availableLocales: string[] = ["en", "bg"];
 const defaultLanguage: string = navigator.language.split("-")[0];
 
-import en from "../locales/en.json" assert { type: "json" };
-import bg from "../locales/bg.json" assert { type: "json" };
+import en from "../locales/en.json" with { type: "json" };
+import bg from "../locales/bg.json" with { type: "json" };
 
 const locales: { [key: string]: { [key: string]: any } } = { en, bg };
 
